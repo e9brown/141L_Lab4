@@ -1,0 +1,178 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
+
+// DATE "12/06/2016 12:49:51"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (SystemVerilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Lab_4 (
+	codeInput,
+	clk);
+input 	logic [8:0] codeInput ;
+input 	reg clk ;
+
+// Design Ports Information
+// codeInput[0]	=>  Location: PIN_86,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// codeInput[1]	=>  Location: PIN_84,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// codeInput[2]	=>  Location: PIN_132,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// codeInput[3]	=>  Location: PIN_58,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// codeInput[4]	=>  Location: PIN_54,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// codeInput[5]	=>  Location: PIN_113,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// codeInput[6]	=>  Location: PIN_111,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// codeInput[7]	=>  Location: PIN_53,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// codeInput[8]	=>  Location: PIN_7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_142,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Lab_4_6_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire \codeInput[0]~input_o ;
+wire \codeInput[1]~input_o ;
+wire \codeInput[2]~input_o ;
+wire \codeInput[3]~input_o ;
+wire \codeInput[4]~input_o ;
+wire \codeInput[5]~input_o ;
+wire \codeInput[6]~input_o ;
+wire \codeInput[7]~input_o ;
+wire \codeInput[8]~input_o ;
+wire \clk~input_o ;
+
+
+// Location: IOIBUF_X34_Y9_N1
+cycloneive_io_ibuf \codeInput[0]~input (
+	.i(codeInput[0]),
+	.ibar(gnd),
+	.o(\codeInput[0]~input_o ));
+// synopsys translate_off
+defparam \codeInput[0]~input .bus_hold = "false";
+defparam \codeInput[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y9_N15
+cycloneive_io_ibuf \codeInput[1]~input (
+	.i(codeInput[1]),
+	.ibar(gnd),
+	.o(\codeInput[1]~input_o ));
+// synopsys translate_off
+defparam \codeInput[1]~input .bus_hold = "false";
+defparam \codeInput[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X13_Y24_N15
+cycloneive_io_ibuf \codeInput[2]~input (
+	.i(codeInput[2]),
+	.ibar(gnd),
+	.o(\codeInput[2]~input_o ));
+// synopsys translate_off
+defparam \codeInput[2]~input .bus_hold = "false";
+defparam \codeInput[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X21_Y0_N8
+cycloneive_io_ibuf \codeInput[3]~input (
+	.i(codeInput[3]),
+	.ibar(gnd),
+	.o(\codeInput[3]~input_o ));
+// synopsys translate_off
+defparam \codeInput[3]~input .bus_hold = "false";
+defparam \codeInput[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X18_Y0_N22
+cycloneive_io_ibuf \codeInput[4]~input (
+	.i(codeInput[4]),
+	.ibar(gnd),
+	.o(\codeInput[4]~input_o ));
+// synopsys translate_off
+defparam \codeInput[4]~input .bus_hold = "false";
+defparam \codeInput[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X28_Y24_N8
+cycloneive_io_ibuf \codeInput[5]~input (
+	.i(codeInput[5]),
+	.ibar(gnd),
+	.o(\codeInput[5]~input_o ));
+// synopsys translate_off
+defparam \codeInput[5]~input .bus_hold = "false";
+defparam \codeInput[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X30_Y24_N22
+cycloneive_io_ibuf \codeInput[6]~input (
+	.i(codeInput[6]),
+	.ibar(gnd),
+	.o(\codeInput[6]~input_o ));
+// synopsys translate_off
+defparam \codeInput[6]~input .bus_hold = "false";
+defparam \codeInput[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y0_N1
+cycloneive_io_ibuf \codeInput[7]~input (
+	.i(codeInput[7]),
+	.ibar(gnd),
+	.o(\codeInput[7]~input_o ));
+// synopsys translate_off
+defparam \codeInput[7]~input .bus_hold = "false";
+defparam \codeInput[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y21_N8
+cycloneive_io_ibuf \codeInput[8]~input (
+	.i(codeInput[8]),
+	.ibar(gnd),
+	.o(\codeInput[8]~input_o ));
+// synopsys translate_off
+defparam \codeInput[8]~input .bus_hold = "false";
+defparam \codeInput[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X3_Y24_N22
+cycloneive_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+endmodule

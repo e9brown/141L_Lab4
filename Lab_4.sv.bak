@@ -3,7 +3,7 @@
 import definitions::*;
 
 
-module Lab_4(
+module Lab_3(
 	input [8:0] codeInput,
 	input clk
 	);

@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 
-module Lab_4_testchench;
+module Lab_3_testchench;
 
 	//input for the processor
 	reg [8:0] codeinput;
 	reg clk;
 	
 	//instantiate the unit under testing
-	Lab_4 uut(
+	Lab_3 uut(
 			.codeInput(codeinput),
 			.clk(clk)
 		);
